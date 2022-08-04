@@ -37,5 +37,7 @@ Pull Request : ask for the request to pull/merge child branch to master branch
 When we send a pull request anybody can review our file and suggest changes
 We can commit changes to the branch add comments and much more.
 
+git pull origin master : pull the changes to the local repositiory
+git branch -d 'branch branchName' : delete the particular branch
 
 
