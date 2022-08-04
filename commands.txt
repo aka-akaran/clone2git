@@ -8,3 +8,9 @@ git push origin master : push the directory to the git
 
 git push -u origin master : sets the origin master as the default directory to push, we can now only say git push
 
+git branch : tell the branch property
+
+* : u are currently on that branch
+
+git checkout -b 'branchName' : create and switch to new branch
+
