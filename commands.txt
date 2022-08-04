@@ -14,3 +14,28 @@ git branch : tell the branch property
 
 git checkout -b 'branchName' : create and switch to new branch
 
+git diff 'branchName' : Tells the diff between the master branch and some branch
+
+git merge : if your curr branch is master branch then merges the other branchs to the master branch
+
+what we must do?
+We first go to the child branch,
+Check the status, if nothing to commit push it to git,
+
+But here we need to specify that we need to push to which branch
+means we have to tell it's parent branch
+we can do so by folloing command
+git push --set-upstream origin 'childBranchName'
+or
+git push -u origin 'childBranchName'
+or
+git push then it will suggest the command automatically
+
+Then send a pull request.
+
+Pull Request : ask for the request to pull/merge child branch to master branch
+When we send a pull request anybody can review our file and suggest changes
+We can commit changes to the branch add comments and much more.
+
+
+
