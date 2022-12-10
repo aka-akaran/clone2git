@@ -41,3 +41,38 @@ git pull origin master : pull the changes to the local repositiory
 git branch -d 'branch branchName' : delete the particular branch
 
 
+'updating the same line as of "tempBranch", Now git has to decide which line to have when 'tempBranch' pull request to merge to master branch.
+//error: Your local changes to the following files would be overwritten by checkout:
+        commands.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+Therefore, you don't get to switch to the 'tempBranch'
+until you commit/ stash the master branch.
+
+
+
+
+
+
+
+
+
+git commit -am "some-text" : this command adds and message at the same time, but only works for the files which are modified
+//if u are adding it to the first time then it does not work.
+
+//creating same line conflict
+//We can create stash but for now we are commiting, 
+//We will look for the stash later on.
+
+git reset 'filename' : unstage the last changes to a particular file
+git reset : unstage all files to the previous stage
+//helps in undoing the file if accidentally I commited something
+//that I don't wanted to commit
+
+git reset HEAD~'steps' : reset the last committed file in the head of the tree
+by the value of steps, steps can be any integer value.
+
+git log : shows the logs/list of all the committed stages
+git reset 'hashValue' : reset to the stage with that hash value onto the git repositiory
+git reset --hard 'hashValue : reset to the stage locally in the files.
